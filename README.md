@@ -1,4 +1,4 @@
-# Opal
+# ❤ Opal ❤
 
 A full-stack e-commerce platform for a women's fashion retailer, built with React, Express, and MongoDB.
 
