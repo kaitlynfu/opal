@@ -1,0 +1,144 @@
+.latest-collection {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.latest-collection-content {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.latest-collection h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.latest-collection p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-details {
+    padding: 5px 0;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.collection-btn {
+    background-color: rgb(227, 196, 159);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.collection-btn:hover {
+    background-color: rgb(157, 136, 111);
+    transform: translateY(-2px);
+}
+
+.size-select {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-card:hover .size-select {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .latest-collection h2 {
+        font-size: 2rem;
+    }
+
+    .product-image {
+        height: 280px;
+    }
+}
+
+@media (max-width: 600px) {
+    .latest-collection {
+        padding: 60px 15px;
+    }
+
+    .latest-collection h2 {
+        font-size: 1.8rem;
+    }
+
+    .latest-collection p {
+        font-size: 1rem;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .collection-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,411 @@
+.search-page {
+    min-height: 100vh;
+    padding-bottom: 90px;
+    background: #fffdf9;
+    color: #302a25;
+}
+
+.search-header {
+    padding: 72px 5% 64px;
+    background:
+        linear-gradient(
+            135deg,
+            #f8eee5 0%,
+            #fffaf5 50%,
+            #f3e5d8 100%
+        );
+    text-align: center;
+}
+
+.search-eyebrow {
+    margin: 0 0 11px;
+    color: #a47f5d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+}
+
+.search-header h1 {
+    margin: 0;
+    color: #302a25;
+    font-size: clamp(40px, 6vw, 68px);
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.search-description {
+    max-width: 590px;
+    margin: 16px auto 29px;
+    color: #766c63;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.search-form {
+    display: flex;
+    align-items: stretch;
+    gap: 11px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.search-input-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    padding: 0 51px;
+    border: 1px solid #decdbd;
+    border-radius: 50px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.92);
+    color: #352f2a;
+    font-family: inherit;
+    font-size: 14px;
+    box-shadow: 0 9px 24px rgba(86, 66, 49, 0.07);
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.search-input-wrapper input:focus {
+    border-color: #b9936d;
+    background: #ffffff;
+    box-shadow:
+        0 9px 24px rgba(86, 66, 49, 0.08),
+        0 0 0 4px rgba(185, 147, 109, 0.12);
+}
+
+.search-input-wrapper input::placeholder {
+    color: #a59a91;
+}
+
+.search-input-wrapper input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: #8d7764;
+    font-size: 22px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.search-input-clear {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #ede3da;
+    color: #786a5e;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.search-input-clear:hover {
+    background: #b9936d;
+    color: #ffffff;
+}
+
+.search-submit-button {
+    min-width: 130px;
+    padding: 0 25px;
+    border: 1px solid #b9936d;
+    border-radius: 50px;
+    background: #b9936d;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 9px 24px rgba(127, 90, 58, 0.16);
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.search-submit-button:hover {
+    border-color: #96704f;
+    background: #96704f;
+    transform: translateY(-2px);
+}
+
+.search-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 55px 5% 0;
+}
+
+.search-results-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 27px;
+}
+
+.search-results-count {
+    margin: 0 0 5px;
+    color: #867a70;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.search-results-heading h2 {
+    margin: 0;
+    color: #332d28;
+    font-size: clamp(25px, 4vw, 38px);
+    font-weight: 550;
+}
+
+.search-clear-button {
+    flex-shrink: 0;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #9c7858;
+    background: transparent;
+    color: #8b6849;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.search-toolbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 35px;
+    padding: 18px 20px;
+    border: 1px solid #e8ded5;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.search-filter-field {
+    display: flex;
+    min-width: 190px;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.search-filter-field span {
+    color: #8a7e73;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.search-filter-field select {
+    height: 42px;
+    padding: 0 38px 0 13px;
+    border: 1px solid #ded4cb;
+    border-radius: 9px;
+    outline: none;
+    background: #fffdfb;
+    color: #4b433c;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search-filter-field select:focus {
+    border-color: #b9936d;
+    box-shadow: 0 0 0 3px rgba(185, 147, 109, 0.12);
+}
+
+.search-product-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+    gap: 34px 22px;
+}
+
+.search-empty-state {
+    display: flex;
+    min-height: 440px;
+    max-width: 650px;
+    margin: 15px auto 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 25px;
+    text-align: center;
+}
+
+.search-empty-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border: 1px solid #dac7b6;
+    border-radius: 50%;
+    background: #fbf4ed;
+    color: #a47f5d;
+    font-size: 30px;
+}
+
+.search-empty-state h2 {
+    margin: 0 0 12px;
+    color: #332d28;
+    font-size: clamp(29px, 5vw, 43px);
+    font-weight: 500;
+}
+
+.search-empty-state > p:not(.search-eyebrow) {
+    max-width: 480px;
+    margin: 0;
+    color: #7c7269;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.search-empty-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 28px;
+}
+
+.search-empty-actions button,
+.search-empty-actions a {
+    min-width: 155px;
+    box-sizing: border-box;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.search-empty-actions button {
+    border: 1px solid #b9936d;
+    background: #b9936d;
+    color: #ffffff;
+}
+
+.search-empty-actions a {
+    border: 1px solid #b9936d;
+    background: transparent;
+    color: #8c694b;
+}
+
+.search-empty-actions button:hover,
+.search-empty-actions a:hover {
+    background: #96704f;
+    border-color: #96704f;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+    .search-product-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 800px) {
+    .search-header {
+        padding: 55px 22px 50px;
+    }
+
+    .search-content {
+        padding: 42px 22px 0;
+    }
+
+    .search-product-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        gap: 28px 16px;
+    }
+
+    .search-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .search-filter-field {
+        width: 100%;
+    }
+
+    .search-results-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .search-header h1 {
+        font-size: 42px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-submit-button {
+        min-height: 52px;
+    }
+
+    .search-product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 10px;
+    }
+
+    .search-empty-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .search-empty-actions button,
+    .search-empty-actions a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .search-product-grid {
+        grid-template-columns: 1fr;
+    }
+}

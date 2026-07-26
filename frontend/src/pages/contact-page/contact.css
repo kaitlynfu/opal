@@ -1,0 +1,86 @@
+.contact-page {
+    padding: 60px 8vw;
+    min-height: 75vh;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    color: #666;
+    font-size: 18px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.contact-details {
+    margin-top: 25px;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 14px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(227, 196, 159);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: rgb(157, 136, 111);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-header h1 {
+        font-size: 32px;
+    }
+}

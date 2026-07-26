@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+
+.hero {
+    height: 82vh;
+    min-height: 620px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    transition: background-image 1s ease-in-out;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.45)
+        );
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    padding: 20px;
+    animation: fadeUp 0.9s ease;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    color: #f4e6d2;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 28px;
+}
+
+.hero-content h1 {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 0.95;
+    margin-bottom: 28px;
+}
+
+.hero-desc {
+    max-width: 620px;
+    margin: 0 auto 34px;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #f8f4ef;
+}
+
+.hero-btn {
+    padding: 17px 45px;
+    font-size: 18px;
+    font-weight: 600;
+
+    color: white;
+    background-color: #d7b48f;
+
+    border: none;
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.hero-btn:hover {
+    background-color: #b8936c;
+    transform: translateY(-3px);
+}
+
+.hero-dots {
+    position: absolute;
+    z-index: 3;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 12px;
+}
+
+.hero-dots button {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-dots button.active-dot {
+    width: 30px;
+    border-radius: 20px;
+    background: #d7b48f;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        height: 72vh;
+        min-height: 540px;
+    }
+    .hero-content h1 {
+        font-size: 58px;
+    }
+    .hero-content h2 {
+        font-size: 28px;
+    }
+    .hero-desc {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 44px;
+    }
+    .hero-content h2 {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    .hero-subtitle {
+        font-size: 15px;
+    }
+    .hero-btn {
+        padding: 14px 34px;
+        font-size: 16px;
+    }
+}
