@@ -1,1 +1,2 @@
-# Full-Stack E-Commerce Platform 
+# Opal
+## Full-Stack E-Commerce Platform 
