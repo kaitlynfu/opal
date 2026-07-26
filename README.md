@@ -2,7 +2,7 @@
 
 A full-stack e-commerce platform for a women's fashion retailer, built with React, Express, and MongoDB.
 
-## Getting Started
+## Getting Started...
 
 ### 1. Clone the Repository
 
@@ -36,4 +36,4 @@ MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
 
-The frontend will run at: `localhost:___`
+The frontend will run at: `https://localhost:___`
